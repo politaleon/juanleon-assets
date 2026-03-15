@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Agencia de Aduana Juan León</title>
+  <meta
+    name="description"
+    content="Inicia tus trámites aduaneros hoy. Envíanos tu información y documentación para validar tu caso antes de iniciar el despacho."
+  />
+  <style>
+    :root {
+      --primary: #003667;
+      --accent: #00c2cb;
+      --accent-secondary: #c72c92;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      padding: 56px 0 40px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      margin: 0 0 18px;
+      font-size: 1.08rem;
+      color: var(--text);
+      max-width: 680px;
+    }
+
+    .support {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 10px;
+      border: 0;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      opacity: 0.92;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 24px rgba(0, 54, 103, 0.06);
+    }
+
+    .mini-title {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .checklist {
+      padding-left: 18px;
+      margin: 0;
+      color: var(--text);
+    }
+
+    .checklist li {
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 56px 0;
+    }
+
+    .section h2 {
+      margin: 0 0 24px;
+      font-size: 2rem;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: rgba(0, 194, 203, 0.14);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .step h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .form-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 24px rgba(0, 54, 103, 0.06);
+    }
+
+    .form-intro {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .iframe-wrap {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 760px;
+      border: 0;
+      display: block;
+      background: #fff;
+    }
+
+    .footer {
+      padding: 28px 0 48px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .logo {
+        max-width: 280px;
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      iframe {
+        min-height: 900px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <img
+        class="logo"
+        src="/hubfs/MailLogo/JuanLeon-Logo-CumplimientoAduanero.png"
+        alt="Agencia de Aduana Juan León"
+      />
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1>Inicia tus trámites aduaneros hoy</h1>
+          <p class="lead">
+            Envíanos la información y documentación solicitada para validar tu caso
+            antes de iniciar el despacho. Te acompañamos con una revisión previa para
+            avanzar con mayor claridad, orden y respaldo.
+          </p>
+          <p class="support">
+            Revisaremos tu información antes de confirmar el inicio del trámite.
+          </p>
+          <a class="cta" href="#formulario">COMENZAR SOLICITUD</a>
+        </div>
+
+        <div class="card">
+          <p class="mini-title">¿Por qué iniciar con nosotros?</p>
+          <ul class="checklist">
+            <li>Revisión previa de antecedentes antes de comenzar.</li>
+            <li>Acompañamiento en operaciones de importación y exportación.</li>
+            <li>Orientación clara sobre documentación y próximos pasos.</li>
+            <li>Proceso ordenado para avanzar con mayor seguridad.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>¿Cómo funciona?</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Completa tu solicitud</h3>
+          <p>
+            Envíanos los antecedentes básicos de tu operación y la documentación requerida.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Revisamos tu caso</h3>
+          <p>
+            Evaluamos la información recibida para validar si el trámite está en condiciones de avanzar.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Te contactamos</h3>
+          <p>
+            Te indicaremos los siguientes pasos y confirmaremos el inicio del proceso si corresponde.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formulario">
+    <div class="container">
+      <h2>Comenzar solicitud</h2>
+      <p class="form-intro">
+        Completa el formulario y adjunta la información solicitada. Revisaremos tus
+        antecedentes antes de confirmar el inicio del trámite.
+      </p>
+
+      <div class="form-wrap">
+        <div class="iframe-wrap">
+          <iframe
+            aria-label="Cotización de Servicios - 2 Pasos"
+            frameborder="0"
+            allow="geolocation;"
+            style="height:750px;width:100%;border:none;"
+            src="https://contacto.juanleon.cl/AgenciaAduanaJuanLeon/form/NuevosContactos/formperma/nItipgC94fgKy-hCm68Js0xnWWs4c1EVULY3PRmgJ1g">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Agencia de Aduana Juan León
+  </footer>
+</body>
+</html>
